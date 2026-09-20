@@ -192,12 +192,8 @@ August 2024 - Present | **GPAX: 3.40**
 
 <div align="center">
 
-### Open to feedback, collaboration, and opportunities to grow in defensive security.
+<img width="100%" src="./assets/soc-profile-footer.svg" alt="Open to feedback, collaboration, and defensive security opportunities" />
 
 <sub>All attack activity shown in these repositories was performed in isolated, authorized lab environments. Public evidence is sanitized before publication.</sub>
-
-<br><br>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:0B3B4A,100:00B4D8&height=110&section=footer" alt="Footer" />
 
 </div>
