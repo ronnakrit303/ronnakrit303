@@ -45,16 +45,16 @@
 
     <g opacity="0.7">
       <path d="M 42 78 V 48 H 60" fill="none" stroke="#00b4d8" stroke-width="2"/>
-      <path d="M 436 48 H 454 V 78" fill="none" stroke="#00b4d8" stroke-width="2"/>
+      <path d="M 394 48 H 412 V 78" fill="none" stroke="#00b4d8" stroke-width="2"/>
       <path d="M 1158 270 H 1124 M 1158 270 V 236" fill="none" stroke="#2dd4bf" stroke-width="2"/>
     </g>
 
     <g transform="translate(73 48)" font-family="Segoe UI, Arial, sans-serif">
-      <rect width="350" height="30" rx="15" fill="#0e3342" stroke="#00b4d8" stroke-opacity="0.65"/>
+      <rect width="308" height="30" rx="15" fill="#0e3342" stroke="#00b4d8" stroke-opacity="0.65"/>
       <circle cx="18" cy="15" r="4" fill="#2dd4bf" filter="url(#soft-glow)">
         <animate attributeName="opacity" values="0.45;1;0.45" dur="2.4s" repeatCount="indefinite"/>
       </circle>
-      <text x="32" y="20" fill="#9eeaff" font-size="12" font-weight="700" letter-spacing="1.8">SECURITY OPERATIONS PORTFOLIO</text>
+      <text x="32" y="20" fill="#9eeaff" font-size="12" font-weight="700" letter-spacing="1.8" textLength="252" lengthAdjust="spacingAndGlyphs">SECURITY OPERATIONS PORTFOLIO</text>
     </g>
 
     <g font-family="Segoe UI, Arial, sans-serif" filter="url(#shadow)">
