@@ -59,6 +59,8 @@ August 2024 - Present | **GPAX: 3.40**
 ### SIEM, Detection & Threat Analysis
 
 ![Wazuh](https://img.shields.io/badge/Wazuh-005571?style=flat-square&logo=wazuh&logoColor=white)
+![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
 ![MITRE ATT&CK](https://img.shields.io/badge/MITRE_ATT%26CK-ED1C24?style=flat-square&logoColor=white)
 ![Log Analysis](https://img.shields.io/badge/Log_Analysis-0B3B4A?style=flat-square)
 ![Incident Response](https://img.shields.io/badge/Incident_Response-B42318?style=flat-square)
