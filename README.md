@@ -46,18 +46,11 @@ August 2024 - Present | **GPAX: 3.40**
 
 ## Detection & Investigation Workflow
 
-```text
-Collect telemetry  ->  Triage alerts  ->  Correlate evidence
-       ->  Map to MITRE ATT&CK  ->  Contain & remediate  ->  Document
-```
+<p align="center">
+  <img src="./assets/workflow/detection-investigation-workflow.svg" width="100%" alt="Animated SOC detection and investigation workflow: collect telemetry, triage alerts, correlate evidence, map MITRE ATT&CK, contain and remediate, then document and tune.">
+</p>
 
-My project documentation is designed to show not only that an alert fired, but also:
-
-- the data source and attack scenario;
-- the detection logic and expected behavior;
-- the investigation timeline and supporting evidence;
-- the true-positive or false-positive decision;
-- containment, remediation, limitations, and tuning opportunities.
+<p align="center"><sub>Every project follows the evidence from its source to a defensible decision, documented response, and detection-tuning opportunity.</sub></p>
 
 ---
 

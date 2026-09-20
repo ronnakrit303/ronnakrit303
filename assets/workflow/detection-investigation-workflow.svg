@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title description">
+  <title id="title">Detection and investigation workflow</title>
+  <desc id="description">An animated six-stage SOC workflow from telemetry collection through triage, evidence correlation, MITRE ATT&amp;CK mapping, containment, and documentation.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="0.55" stop-color="#0b2530"/>
+      <stop offset="1" stop-color="#0b3b4a"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00b4d8"/>
+      <stop offset="0.5" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#18222d"/>
+      <stop offset="1" stop-color="#111820"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#58a6ff"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="560" rx="24" fill="url(#background)"/>
+  <rect x="8" y="8" width="1184" height="544" rx="19" fill="none" stroke="#00b4d8" stroke-opacity="0.32" stroke-width="2"/>
+
+  <g opacity="0.09" stroke="#8b949e" stroke-width="1">
+    <path d="M 0 80 H 1200 M 0 160 H 1200 M 0 240 H 1200 M 0 320 H 1200 M 0 400 H 1200 M 0 480 H 1200"/>
+    <path d="M 100 0 V 560 M 300 0 V 560 M 500 0 V 560 M 700 0 V 560 M 900 0 V 560 M 1100 0 V 560"/>
+  </g>
+
+  <text x="55" y="45" fill="#00b4d8" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="3">SOC ANALYSIS PIPELINE</text>
+  <text x="55" y="82" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">From signal to documented incident</text>
+  <text x="1145" y="65" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13" text-anchor="end">Collect · Validate · Decide · Improve</text>
+
+  <!-- Animated route behind the cards. It remains meaningful as a static path when animation is unavailable. -->
+  <path d="M 205 180 H 600 H 995 V 360 H 600 H 205" fill="none" stroke="#00b4d8" stroke-opacity="0.18" stroke-width="5"/>
+  <circle r="7" fill="#7ee787" filter="url(#glow)">
+    <animateMotion dur="7.2s" repeatCount="indefinite" path="M 205 180 H 600 H 995 V 360 H 600 H 205"/>
+    <animate attributeName="opacity" values="0;1;1;1;1;1;0" dur="7.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <g fill="none" stroke="url(#flow)" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M 365 180 H 438">
+      <animate attributeName="stroke-dasharray" values="2 10;12 6;2 10" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 760 180 H 833">
+      <animate attributeName="stroke-dasharray" values="2 10;12 6;2 10" dur="2.4s" begin="0.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 995 250 V 288">
+      <animate attributeName="stroke-dasharray" values="2 10;12 6;2 10" dur="2.4s" begin="0.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 835 360 H 762">
+      <animate attributeName="stroke-dasharray" values="2 10;12 6;2 10" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 440 360 H 367">
+      <animate attributeName="stroke-dasharray" values="2 10;12 6;2 10" dur="2.4s" begin="1.6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Stage 1 -->
+  <g filter="url(#shadow)">
+    <rect x="55" y="120" width="300" height="120" rx="16" fill="url(#card)" stroke="#30363d" stroke-width="2">
+      <animate attributeName="stroke" values="#30363d;#00b4d8;#30363d" dur="7.2s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="55" y="120" width="7" height="120" rx="3.5" fill="#00b4d8"/>
+    <circle cx="94" cy="158" r="20" fill="#103847" stroke="#00b4d8" stroke-width="2">
+      <animate attributeName="r" values="20;24;20" dur="7.2s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <text x="94" y="164" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">01</text>
+    <text x="126" y="160" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Collect Telemetry</text>
+    <text x="82" y="204" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="14">Logs · endpoints · email · network</text>
+  </g>
+
+  <!-- Stage 2 -->
+  <g filter="url(#shadow)">
+    <rect x="450" y="120" width="300" height="120" rx="16" fill="url(#card)" stroke="#30363d" stroke-width="2">
+      <animate attributeName="stroke" values="#30363d;#58a6ff;#30363d" dur="7.2s" begin="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="450" y="120" width="7" height="120" rx="3.5" fill="#58a6ff"/>
+    <circle cx="489" cy="158" r="20" fill="#193b61" stroke="#58a6ff" stroke-width="2">
+      <animate attributeName="r" values="20;24;20" dur="7.2s" begin="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="489" y="164" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">02</text>
+    <text x="521" y="160" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Triage Alerts</text>
+    <text x="477" y="204" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="14">Scope · severity · initial verdict</text>
+  </g>
+
+  <!-- Stage 3 -->
+  <g filter="url(#shadow)">
+    <rect x="845" y="120" width="300" height="120" rx="16" fill="url(#card)" stroke="#30363d" stroke-width="2">
+      <animate attributeName="stroke" values="#30363d;#a78bfa;#30363d" dur="7.2s" begin="2.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="845" y="120" width="7" height="120" rx="3.5" fill="#a78bfa"/>
+    <circle cx="884" cy="158" r="20" fill="#342b54" stroke="#a78bfa" stroke-width="2">
+      <animate attributeName="r" values="20;24;20" dur="7.2s" begin="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="884" y="164" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">03</text>
+    <text x="916" y="160" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Correlate Evidence</text>
+    <text x="872" y="204" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="14">Timeline · entities · related events</text>
+  </g>
+
+  <!-- Stage 4 -->
+  <g filter="url(#shadow)">
+    <rect x="845" y="300" width="300" height="120" rx="16" fill="url(#card)" stroke="#30363d" stroke-width="2">
+      <animate attributeName="stroke" values="#30363d;#f85149;#30363d" dur="7.2s" begin="3.6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="845" y="300" width="7" height="120" rx="3.5" fill="#f85149"/>
+    <circle cx="884" cy="338" r="20" fill="#4b2427" stroke="#f85149" stroke-width="2">
+      <animate attributeName="r" values="20;24;20" dur="7.2s" begin="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="884" y="344" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">04</text>
+    <text x="916" y="340" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Map ATT&amp;CK</text>
+    <text x="872" y="384" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="14">Tactic · technique · attack context</text>
+  </g>
+
+  <!-- Stage 5 -->
+  <g filter="url(#shadow)">
+    <rect x="450" y="300" width="300" height="120" rx="16" fill="url(#card)" stroke="#30363d" stroke-width="2">
+      <animate attributeName="stroke" values="#30363d;#f2cc60;#30363d" dur="7.2s" begin="4.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="450" y="300" width="7" height="120" rx="3.5" fill="#f2cc60"/>
+    <circle cx="489" cy="338" r="20" fill="#4a4021" stroke="#f2cc60" stroke-width="2">
+      <animate attributeName="r" values="20;24;20" dur="7.2s" begin="4.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="489" y="344" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">05</text>
+    <text x="521" y="340" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Contain &amp; Remediate</text>
+    <text x="477" y="384" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="14">Limit impact · remove cause · harden</text>
+  </g>
+
+  <!-- Stage 6 -->
+  <g filter="url(#shadow)">
+    <rect x="55" y="300" width="300" height="120" rx="16" fill="url(#card)" stroke="#30363d" stroke-width="2">
+      <animate attributeName="stroke" values="#30363d;#3fb950;#30363d" dur="7.2s" begin="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="55" y="300" width="7" height="120" rx="3.5" fill="#3fb950"/>
+    <circle cx="94" cy="338" r="20" fill="#21442b" stroke="#3fb950" stroke-width="2">
+      <animate attributeName="r" values="20;24;20" dur="7.2s" begin="6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="94" y="344" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">06</text>
+    <text x="126" y="340" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Document &amp; Tune</text>
+    <text x="82" y="384" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="14">Decision · evidence · lessons learned</text>
+  </g>
+
+  <text x="55" y="463" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2.5">EVIDENCE CHAIN</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#d9e2ec">
+    <g>
+      <rect x="55" y="480" width="205" height="48" rx="12" fill="#111820" stroke="#00b4d8" stroke-opacity="0.6"/>
+      <circle cx="76" cy="504" r="5" fill="#00b4d8"/>
+      <text x="90" y="509">Data source + scenario</text>
+    </g>
+    <g>
+      <rect x="275" y="480" width="205" height="48" rx="12" fill="#111820" stroke="#58a6ff" stroke-opacity="0.6"/>
+      <circle cx="296" cy="504" r="5" fill="#58a6ff"/>
+      <text x="310" y="509">Detection logic</text>
+    </g>
+    <g>
+      <rect x="495" y="480" width="205" height="48" rx="12" fill="#111820" stroke="#a78bfa" stroke-opacity="0.6"/>
+      <circle cx="516" cy="504" r="5" fill="#a78bfa"/>
+      <text x="530" y="509">Timeline + evidence</text>
+    </g>
+    <g>
+      <rect x="715" y="480" width="205" height="48" rx="12" fill="#111820" stroke="#f2cc60" stroke-opacity="0.6"/>
+      <circle cx="736" cy="504" r="5" fill="#f2cc60"/>
+      <text x="750" y="509">TP / FP decision</text>
+    </g>
+    <g>
+      <rect x="935" y="480" width="210" height="48" rx="12" fill="#111820" stroke="#3fb950" stroke-opacity="0.6"/>
+      <circle cx="956" cy="504" r="5" fill="#3fb950"/>
+      <text x="970" y="509">Response + tuning</text>
+    </g>
+  </g>
+</svg>
