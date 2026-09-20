@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:0B3B4A,100:00B4D8&height=190&section=header&text=Ronnakrit%20Woralakpakdee&fontColor=FFFFFF&fontSize=38&fontAlignY=36&desc=Blue%20Team%20%7C%20SOC%20%7C%20Detection%20Engineering&descSize=17&descAlignY=58" alt="Ronnakrit Woralakpakdee - Blue Team, SOC, and Detection Engineering" />
+<img width="100%" src="./assets/soc-profile-banner.svg" alt="Ronnakrit Woralakpakdee - SOC Analyst, Blue Team, and Detection Engineering" />
 
 ### Aspiring SOC Analyst & Blue Team Practitioner
 
