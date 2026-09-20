@@ -7,6 +7,8 @@
 I am a third-year Computer Science student at **Thammasat University** with a focus on Blue Team security, threat detection, and incident analysis. I build hands-on security labs that turn raw telemetry into actionable detections, validate alerts through controlled attack simulations, and document the complete incident lifecycle.
 
 [![GitHub](https://img.shields.io/badge/GitHub-ronnakrit303-181717?style=for-the-badge&logo=github)](https://github.com/ronnakrit303)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ronnakrit-woralakpakdee-8417003a3/)
+[![Gmail](https://img.shields.io/badge/Gmail-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ronnakrit.wor@gmail.com)
 [![Profile Views](https://komarev.com/ghpvc/?username=ronnakrit303&style=for-the-badge&color=00B4D8&label=PROFILE+VIEWS)](https://github.com/ronnakrit303)
 
 </div>
