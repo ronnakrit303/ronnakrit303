@@ -96,8 +96,8 @@ August 2024 - Present | **GPAX: 3.40**
       </a>
     </td>
     <td>
-      <strong>Cybersecurity &amp; SOC Foundation</strong><br>
-      <em>CSTU Summer Cyber Camp 2026</em><br>
+      <strong>CSTU Summer Cyber Camp 2026 &ndash; Cybersecurity &amp; SOC Foundation</strong><br>
+      <em>Department of Computer Science, Faculty of Science and Technology, Thammasat University</em><br>
       Completed hands-on training in security operations, Linux, networking, web security, and digital forensics.<br>
       <a href="https://drive.google.com/file/d/1sK21iKJG1Vu3DgnK5LE_yY8_W56OxR1J/view?usp=drive_link">View Certificate &#8599;</a>
     </td>
